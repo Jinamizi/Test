@@ -2,18 +2,33 @@
 <html>
 <head>
 	  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+	  <script src="example.js"></script>
 </head>
 <body>
 
 <p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-<button id="button" style="background-color: lightblue;">Click me</button>
-<script>
-$("button").click(function(){
-	$("p").hide();
-	$("button").text("SHOW")
-});
-</script>
+<p id="test">This is another paragraph.</p>
+<button id="hideButton" style="background-color: lightblue;">Click me</button>
+
+<select id="selectList">
+	<option value="Option 1">Option 1</option>
+	<option value="Option 2">Option 2</option>
+	<option value="Option 3">Option 3</option>
+</select>
+
+<p>The text inside the <span id="spanElement">span</span> will be changed.</p>
+
+<input type="text" name="" id="inputField">
+<button id="submitButton">Submit</button>
+<p>The input field contains: <span id="outputSpan">None</span></p>
+<p>Sublime Text is a shareware text and source code editor available for Windows, macOS, and Linux. It natively supports many programming languages and markup languages. ...
+	<a id="see-more" href="javascript:void(0)">see more</a>
+	<span id="rest-of-story" style="display: none;">Users can customize it with themes and expand its functionality with plugins, typically community-built and maintained under free-software licenses. To facilitate plugins, Sublime Text features a Python API. The editor utilizes minimal interface and contains features for programmers including configurable syntax highlighting, code folding, search-and-replace supporting regular-expressions, terminal output window, and more. It is proprietary software, but a free evaluation version is available.</span>
+</p>
+
+<p id="#p1">The mouseenter() method attaches an event handler function to an HTML element.
+The function is executed when the mouse pointer enters the HTML element:</p>
 
 
 </body>
