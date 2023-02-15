@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form Example</title>
+  <style>
+    form {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#login-btn').click(function(event) {
+        event.preventDefault();
+        var username = $('#username').val();
+        var password = $('#password').val();
+        if (username === 'example' && password === 'password') {
+          alert('Login successful!');
+          // Redirect to another page or do something else
+        } else {
+          alert('Invalid username or password. Please try again.');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button type="submit" id="login-btn">Login</button>
+  </form>
+</body>
+</html>
