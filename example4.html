@@ -3,10 +3,18 @@
 <head>
   <title>Login Form Example</title>
   <style>
+  	.wrapper{
+  		text-align: center;
+  	}
+
     form {
       width: 300px;
       margin: 0 auto;
       text-align: center;
+      border: 2px solid black;
+  		padding: 10px;
+  		margin: 0 auto;
+  		display: inline-block;
     }
 
     label {
@@ -19,6 +27,7 @@
       padding: 10px;
       margin-bottom: 10px;
       box-sizing: border-box;
+      direction: rtl;
     }
 
     button {
@@ -49,6 +58,7 @@
   </script>
 </head>
 <body>
+	<div class="wrapper">
   <form>
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
@@ -56,5 +66,7 @@
     <input type="password" id="password" name="password">
     <button type="submit" id="login-btn">Login</button>
   </form>
+
+</div>
 </body>
 </html>
